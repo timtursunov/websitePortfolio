@@ -8,14 +8,37 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="header">
-        <p class="header__text">Tim is a FullStack Web Developer /</p>
+    <header>
+        <div class="ticker ticker--top">
+            <p class="ticker__text ticker__text--top">
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+            </p>
+        </div>
+
+
+        <div class="ticker ticker--bottom">
+            <p class="ticker__text ticker__text--bottom">
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+                <span>Tim is a FullStack Web Developer /</span>
+            </p>
+        </div>
+
     </header>
+
     <main class="main">
         <div class="hero">
             <p class="hero__text">
-                Hi friend! I'm Tim. I'm a Full Stack Web Developer
-                with a love for web design and environment based in Toronto.
+                Hi friend! I'm <span>Tim</span>. I'm a <span>Full Stack Web Developer</span>
+                with a love for web design and environment based in <span> Toronto.</span>
                 I channel my visual communication and computer technology interests to find creative solutions and bring my ideas online.
             </p>
             <p class="hero__text">
@@ -25,8 +48,13 @@
 
             </p>
             <p class="hero__text">
-                Feel free to check out my work and resume.
-                If you wanna chat, don't hesitate to drop me a line!
+                Feel free to check out my 
+                <a href="">work</a>
+                 and 
+                 <a href="">
+                    resume
+                 </a>
+                . If you wanna <a href="">chat</a>, don't hesitate to drop me a line!
             </p>
 
         </div>
@@ -34,15 +62,23 @@
         <div class="social__grid">
             <div class="social__section">
                 <a class="social__link" href="">github</a>
+                <div class="social__icon">
+                </div>
             </div>
             <div class="social__section">
                 <a class="social__link" href="">linkedIn</a>
+                <div class="social__icon">
+                </div>
             </div>
             <div class="social__section">
                 <a class="social__link" href="">Resume</a>
+                <div class="social__icon">
+                </div>
             </div>
             <div class="social__section">
                 <a class="social__link" href="">Email</a>
+                <div class="social__icon">
+                </div>
             </div>
         </div>
 
@@ -69,38 +105,190 @@
                     </p>
                 </div>
             </div>
-
-
+            <div class="portfolio__grid">
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Birds of Ukraine
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        HTML, CSS, JS, Jquery, WordPress, PHP
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Freelance work for the foundation of biodiversity of Ukraine 
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            LIVESITE
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            GITHUB
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__grid">
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Daria Zapriagaeva
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        HTML, CSS, React, Contentful JS
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Portfolio website for photographer Daria Zapriagaeva
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            LIVESITE
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            GITHUB
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="portfolio__grid">
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Warbridge
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        HTML, CSS, JS, Jquery
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Freelance work for Consulting company based in the Netherlands
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            LIVESITE
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            GITHUB
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="portfolio__grid">
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        WineHub
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        HTML, SASS, React, Express, Node, RESTful API, MongoDB, FireBase
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Developmeny for a platform intended to help local businesses to promote
+                        their wine inventory to customers. Capstone project for Brainstation
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            LIVESITE
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            GITHUB
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="portfolio__grid">
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        InStock
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        HTML, CSS, React, Express, Node, RESTful API
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <p class="portfolio__text">
+                        Brainstation collaborative project
+                        Inventory & Warehouse Management System
+                    </p>
+                </div>
+                <div class="portfolio__section">
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            LIVESITE
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <p class="portfolio__text">
+                            GITHUB
+                        </p>
+                        <div class="portfolio__icon">
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
-        
-
-
-
-
-
-        <div class="social__grid">
-            <div class="social__section">
-                <a class="social__link" href="">github</a>
-            </div>
-            <div class="social__section">
-                <a class="social__link" href="">linkedIn</a>
-            </div>
-            <div class="social__section">
-                <a class="social__link" href="">Resume</a>
-            </div>
-            <div class="social__section">
-                <a class="social__link" href="">Email</a>
-            </div>
-        </div>
-        
-
     </main>
 
 
 
     <footer class="website__footer">
+        <p class="footer__copyrights">
+            &#169 <span class="footer__date"></span>
+        </p>
+        <h1>
+            Tim Tursunov
+        </h1>
 
     </footer>
     
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="./app.js"></script>
+
 </html>
