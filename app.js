@@ -11,13 +11,21 @@ movemenTimeline
         duration: 6,
         ease: 'linear'
     })
+let nav = document.querySelector('.socials');
+const scrollPercentage = document.querySelector('.progress-bar__number');
+document.addEventListener('scroll', () => {
+    const pixels = window.pageYOffset
+    let limit = (window.pageYOffset + window.innerHeight) / document.body.scrollHeight * 100
+    if (limit === 100) {
+        scrollPercentage.innerHTML = `socials`
+        nav.style.opacity = 1;
+        nav.style.zIndex = 3
+    } else {
+        scrollPercentage.innerHTML = `${pixels.toFixed()}px`
+        nav.style.opacity = 0;
+        nav.style.zIndex = -1
+    }
+})
+// render
 
-
-let dateSpan = document.querySelector('.footer__date');
-let timeText = document.querySelector('.footer__time')
-let date = new Date();
-let year = date.getFullYear();
-
-dateSpan.innerHTML = year;
-timeText.innerHTML = `${date.getHours()} ${date.getMinutes()} ${date.getSeconds()}`
-
+const renderer = new THREE.GLRenderer()
