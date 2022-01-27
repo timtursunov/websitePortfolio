@@ -27,7 +27,6 @@ document.addEventListener('scroll', () => {
         nav.style.opacity = 0;
         nav.style.zIndex = -1
     }
-
 })
 const skillsBtn = document.querySelector('#skillsBtn');
 const portfolioBtn = document.querySelector('#portfolioBtn');
@@ -75,7 +74,6 @@ const FadeIn = () => {
         const tagsBottom = tag.getBoundingClientRect().bottom
         // console.log(tagsTop, tagsBottom)
         if(tagsTop < window.innerHeight && tagsBottom > 0
-            // if its in the view
             ) {
                 tag.style.animation = `fadein 0.5s ${delay}s ease-in both`
 
@@ -92,8 +90,6 @@ document.addEventListener("scroll", FadeIn )
 window.addEventListener("resize", () => {
     FadeIn()
 })
-// loc
-
 const locomotiveScroll = new LocomotiveScroll({
      el: document.querySelectorAll('.scroll'),
      smoth: true
