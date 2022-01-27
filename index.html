@@ -5,300 +5,420 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Tursunov</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/favicon/Rectangle 1.png" type="image/png" />
 </head>
 <body>
-    <header class="socials">
-        <nav class="socials__nav">
-            <ul>
-                <li>
-                    <a href="" target="_blank" >
-                        email
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank" >
-                        resume
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank" >
-                        linkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="" target="_blank" >
-                        github
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    <div class="progress-bar">
-        <p class="progress-bar__number"></p>
-    </div>
-    <main>
-        <div class="hero">
-            <h1>
-                Timur Tursunov
-            </h1>
-
-            <div class="hero__svg">
-
-            </div>
-
-            <p class="hero__text">scroll down</p>
+    <div class="scroll">
+        <header class="socials">
+            <nav class="socials__nav">
+                <ul>
+                    <li>
+                        <a href="mailto:tim.alex.turs@gmail.com" target="_blank" >
+                            email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" >
+                            resume
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/timtursunov/" target="_blank" >
+                            linkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/timtursunov" target="_blank" >
+                            github
+                        </a>
+                    </li>
+                    <li>
+                        <p id="skillsBtn" class="nav__item">
+                            skills
+                        </p>
+                    </li>
+                    <li>
+                        <p id="portfolioBtn" class="nav__item--selected" >
+                            portfolio
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="progress-bar">
+            <p class="progress-bar__number"></p>
         </div>
-        <div class="bio">
-            <div class="bio-animation">
+        <main>
+            <div class="hero">
+                <h1>
+                    Tim Tursunov
+                </h1>
+                <div class="hero__svg">
+                </div>
+                <p class="hero__text">keep scrolling</p>
+            </div>
+            <div class="photo--mobile">
+            </div>
+            <div class="bio">
 
+                <div class="bio-text">
+                    <p class="bio__text">
+                        Hi friend! I'm Tim. I'm a Full Stack Web Developer with a love for web design and environment based in Toronto.
+                        I channel my visual communication and computer technology interests to find creative solutions and bring my ideas online.
+                    </p>
+                    <p class="bio__text">
+                        I come from a background in politics and policymaking.
+                        After my co-op in HERE technologies as a data analyst intern,
+                        I decided to pursue my career in the digital realm.
+                    </p>
+                    <p class="bio__text">
+                        Feel free to check out my 
+                        <a href="bio__text--link">work</a>
+                         and 
+                         <a href="bio__text--link">
+                            resume
+                         </a>
+                        . If you wanna <a href="bio__text--link">chat</a>, don't hesitate to drop me a line!
+                    </p>
+                </div>
             </div>
-            <div class="bio-text">
-                <p class="bio__text">
-                    Hi friend! I'm Tim. I'm a Full Stack Web Developer with a love for web design and environment based in Toronto.
-                    I channel my visual communication and computer technology interests to find creative solutions and bring my ideas online.
-                </p>
-                <p class="bio__text">
-                    I come from a background in politics and policymaking.
-                    After my co-op in HERE technologies as a data analyst intern,
-                    I decided to pursue my career in the digital realm.
-                </p>
-                <p class="bio__text">
-                    Feel free to check out my 
-                    <a href="bio__text--link">work</a>
-                     and 
-                     <a href="bio__text--link">
-                        resume
-                     </a>
-                    . If you wanna <a href="bio__text--link">chat</a>, don't hesitate to drop me a line!
-                </p>
-            </div>
-        </div>
-        <div class="portfolio">
-            <div class="portfolio-wrapper">
-                <div class="portfolio-section">
-                    <div class="portfolio-section__title year">
-                        <p class="portfolio__text text-navigation">
-                            year
-                        </p>
-                    </div>
-                    <div class="portfolio__section title">
-                        <p class="portfolio__text text-navigation">
-                            title
-                        </p>
-                    </div>
-                    <div class="portfolio__section skills">
-                        <p class="portfolio__text text-navigation">
-                            technologies
-                        </p>
-                    </div>
-                    <div class="portfolio__section description">
-                        <p class="portfolio__text text-navigation">
-                            description
-                        </p>
-                    </div>
-                    <div class="portfolio__section links">
-                        <div class="portfolio__item">
+            <div class="portfolio">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-section">
+                        <div class="portfolio-section__title year">
                             <p class="portfolio__text text-navigation">
-                                links
+                                year
                             </p>
-                            <div class="portfolio__icon">
+                        </div>
+                        <div class="portfolio__section title">
+                            <p class="portfolio__text text-navigation">
+                                title
+                            </p>
+                        </div>
+                        <div class="portfolio__section skills">
+                            <p class="portfolio__text text-navigation">
+                                technologies
+                            </p>
+                        </div>
+                        <div class="portfolio__section description">
+                            <p class="portfolio__text text-navigation">
+                                description
+                            </p>
+                        </div>
+                        <div class="portfolio__section links">
+                            <div class="portfolio__item">
+                                <p class="portfolio__text text-navigation">
+                                    links
+                                </p>
+                                <div class="portfolio__icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-section">
+                        <div class="portfolio-section__title year">
+                            <p class="portfolio__text ">
+                                2022
+                            </p>
+                        </div>
+                        <div class="portfolio__section title">
+                            <p class="portfolio__text ">
+                                Birds of Ukraine
+                            </p>
+                        </div>
+                        <div class="portfolio__section skills">
+                            <p class="portfolio__text">
+                                HTML, CSS, 
+                                <span class="portololio__skill">JS, </span>
+                                JS, Jquery,
+                                <span class="portololio__skill">
+                                    WordPress, 
+                                </span>
+                                <span class="portololio__skill">
+                                    PHP
+                                </span>
+                            </p>
+                        </div>
+                        <div class="portfolio__section description">
+                            <p class="portfolio__text">
+                                Freelance work for the foundation of biodiversity of Ukraine 
+                            </p>
+                        </div>
+                        <div class="portfolio__section links">
+                            <div class="portfolio__item">
+                                <a target="_blank" href="" class="portfolio__text portfolio__link">
+                                    LIVESITE
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <a target="_blank" href="https://github.com/timtursunov/birdOfUkraine" class="portfolio__text portfolio__link">
+                                    GITHUB
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-section">
+                        <div class="portfolio-section__title year">
+                            <p class="portfolio__text ">
+                                2021
+                            </p>
+                        </div>
+                        <div class="portfolio__section title">
+                            <p class="portfolio__text ">
+                                Daria Zapriagaeva
+                            </p>
+                        </div>
+                        <div class="portfolio__section skills">
+                            <p class="portfolio__text">
+                                <span class="portololio__skill">HTML</span>
+                                , CSS, React, 
+                                <span class="portololio__skill">
+                                    Contentful JS
+                                </span>
+                            </p>
+                        </div>
+                        <div class="portfolio__section description">
+                            <p class="portfolio__text">
+                                Portfolio website for photographer Daria Zapriagaeva
+                            </p>
+                        </div>
+                        <div class="portfolio__section links">
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    LIVESITE
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    GITHUB
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-section">
+                        <div class="portfolio-section__title year">
+                            <p class="portfolio__text ">
+                                2021
+                            </p>
+                        </div>
+                        <div class="portfolio__section title">
+                            <p class="portfolio__text ">
+                                Warbridge
+                            </p>
+                        </div>
+                        <div class="portfolio__section skills">
+                            <p class="portfolio__text">
+                                HTML, 
+                                <span class="portololio__skill">
+                                    CSS
+                                </span>, JS, 
+                                <span class="portololio__skill">
+                                    Jquery
+                                </span>
+                            </p>
+                        </div>
+                        <div class="portfolio__section description">
+                            <p class="portfolio__text">
+                                Freelance work for Consulting company based in the Netherlands
+                            </p>
+                        </div>
+                        <div class="portfolio__section links">
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    LIVESITE
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    GITHUB
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-section">
+                        <div class="portfolio-section__title year">
+                            <p class="portfolio__text ">
+                                2021
+                            </p>
+                        </div>
+                        <div class="portfolio__section title">
+                            <p class="portfolio__text ">
+                                WineHub
+                            </p>
+                        </div>
+                        <div class="portfolio__section skills">
+                            <p class="portfolio__text">
+                                HTML, 
+                                <span class="portololio__skill">
+                                    SASS, 
+                                </span>
+                                React, Express, Node, RESTful API, 
+                                <span class="portololio__skill">
+                                    MongoDB, 
+                                </span>
+                                <span class="portololio__skill">
+                                    Firabase
+                                </span>
+                            </p>
+                        </div>
+                        <div class="portfolio__section description">
+                            <p class="portfolio__text">
+                                Developmeny for a platform intended to help local businesses to promote
+                                their wine inventory to customers. Capstone project for Brainstation
+                            </p>
+                        </div>
+                        <div class="portfolio__section links">
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    LIVESITE
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    GITHUB
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-section">
+                        <div class="portfolio-section__title year">
+                            <p class="portfolio__text ">
+                                2021
+                            </p>
+                        </div>
+                        <div class="portfolio__section title">
+                            <p class="portfolio__text ">
+                                InStock
+                            </p>
+                        </div>
+                        <div class="portfolio__section skills">
+                            <p class="portfolio__text">
+                                HTML, CSS, React, 
+                                <span class="portololio__skill">
+                                    Express, 
+                                </span>
+                                Express, 
+                                <span class="portololio__skill">
+                                    Node, 
+                                </span>
+                                <span class="portololio__skill">
+                                    RESTful API
+                                </span>
+                            </p>
+                        </div>
+                        <div class="portfolio__section description">
+                            <p class="portfolio__text">
+                                Brainstation collaborative project
+                                Inventory & Warehouse Management System
+                            </p>
+                        </div>
+                        <div class="portfolio__section links">
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    LIVESITE
+                                </a>
+                            </div>
+                            <div class="portfolio__item">
+                                <a target="_blank" class="portfolio__text portfolio__link">
+                                    GITHUB
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-section">
-                    <div class="portfolio-section__title year">
-                        <p class="portfolio__text ">
-                            2022
-                        </p>
-                    </div>
-                    <div class="portfolio__section title">
-                        <p class="portfolio__text ">
-                            Birds of Ukraine
-                        </p>
-                    </div>
-                    <div class="portfolio__section skills">
-                        <p class="portfolio__text">
-                            HTML, CSS, JS, Jquery, WordPress, PHP
-                        </p>
-                    </div>
-                    <div class="portfolio__section description">
-                        <p class="portfolio__text">
-                            Freelance work for the foundation of biodiversity of Ukraine 
-                        </p>
-                    </div>
-                    <div class="portfolio__section links">
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__text portfolio__link">
-                                LIVESITE
-                            </a>
+            </div>
+            <div class="portfolio--mobile">
+                <h2>
+                    works
+                </h2>
+                <div class="portolio-section--mobile">
+                    <div class="portfolio__section--mobile">
+                        <div class="portfolio__iteam--mobile">
+                                <p>2022 <span>
+                                    (HTML, CSS, JS, JS, Jquery, WordPress, PHP)&#42;
+                                </span> 
+                                </p>
                         </div>
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__item portfolio__link">
-                                GITHUB
+                        <div class="portfolio__iteam--mobile">
+                            <a href="">
+                                Birds of Ukraine 
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-section">
-                    <div class="portfolio-section__title year">
-                        <p class="portfolio__text ">
-                            2021
-                        </p>
-                    </div>
-                    <div class="portfolio__section title">
-                        <p class="portfolio__text ">
-                            Daria Zapriagaeva
-                        </p>
-                    </div>
-                    <div class="portfolio__section skills">
-                        <p class="portfolio__text">
-                            HTML, CSS, React, Contentful JS
-                        </p>
-                    </div>
-                    <div class="portfolio__section description">
-                        <p class="portfolio__text">
-                            Portfolio website for photographer Daria Zapriagaeva
-                        </p>
-                    </div>
-                    <div class="portfolio__section links">
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__text portfolio__link">
-                                LIVESITE
-                            </a>
+                    <div class="portfolio--section">
+                        <div class="portfolio__iteam--mobile">
+                                <p>2021 <span>
+                                    (HTML , CSS, React, Contentful JS)&#42;
+                                </span> 
+                                </p>
                         </div>
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__item portfolio__link">
-                                GITHUB
+                        <div class="portfolio__iteam--mobile">
+                            <a href="">
+                                Daria Zapriagaeva
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-section">
-                    <div class="portfolio-section__title year">
-                        <p class="portfolio__text ">
-                            2021
-                        </p>
-                    </div>
-                    <div class="portfolio__section title">
-                        <p class="portfolio__text ">
-                            Warbridge
-                        </p>
-                    </div>
-                    <div class="portfolio__section skills">
-                        <p class="portfolio__text">
-                            HTML, CSS, JS, Jquery
-                        </p>
-                    </div>
-                    <div class="portfolio__section description">
-                        <p class="portfolio__text">
-                            Freelance work for Consulting company based in the Netherlands
-                        </p>
-                    </div>
-                    <div class="portfolio__section links">
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__text portfolio__link">
-                                LIVESITE
-                            </a>
+                    <div class="portfolio--section">
+                        <div class="portfolio__iteam--mobile">
+                            <p>2021 <span>
+                                (HTML, CSS , JS, Jquery)&#42;
+                            </span> 
+                            </p>
                         </div>
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__item portfolio__link">
-                                GITHUB
+                        <div class="portfolio__iteam--mobile">
+                            <a href="">
+                                Warbridge
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-section">
-                    <div class="portfolio-section__title year">
-                        <p class="portfolio__text ">
-                            2021
-                        </p>
-                    </div>
-                    <div class="portfolio__section title">
-                        <p class="portfolio__text ">
-                            WineHub
-                        </p>
-                    </div>
-                    <div class="portfolio__section skills">
-                        <p class="portfolio__text">
-                            HTML, SASS, React, Express, Node, RESTful API, MongoDB, FireBase
-                        </p>
-                    </div>
-                    <div class="portfolio__section description">
-                        <p class="portfolio__text">
-                            Developmeny for a platform intended to help local businesses to promote
-                            their wine inventory to customers. Capstone project for Brainstation
-                        </p>
-                    </div>
-                    <div class="portfolio__section links">
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__text portfolio__link">
-                                LIVESITE
-                            </a>
+                    <div class="portfolio--section">
+                        <div class="portfolio__iteam--mobile">
+                            <p>2021 <span>
+                                (HTML, SASS, React, Express, Node, MongoDB, Firabase)&#42;
+                            </span> 
+                            </p>
                         </div>
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__item portfolio__link">
-                                GITHUB
+                        <div class="portfolio__iteam--mobile">
+                            <a href="">
+                                WineHub
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="portfolio-section">
-                    <div class="portfolio-section__title year">
-                        <p class="portfolio__text ">
-                            2021
-                        </p>
-                    </div>
-                    <div class="portfolio__section title">
-                        <p class="portfolio__text ">
-                            InStock
-                        </p>
-                    </div>
-                    <div class="portfolio__section skills">
-                        <p class="portfolio__text">
-                            HTML, CSS, React, Express, Node, RESTful API
-                        </p>
-                    </div>
-                    <div class="portfolio__section description">
-                        <p class="portfolio__text">
-                            Brainstation collaborative project
-                            Inventory & Warehouse Management System
-                        </p>
-                    </div>
-                    <div class="portfolio__section links">
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__text portfolio__link">
-                                LIVESITE
-                            </a>
+                    <div class="portfolio--section">
+                        <div class="portfolio__iteam--mobile">
+                            <p>2021 <span>
+                                (HTML, CSS, React, Express, Express, Node)&#42;
+                            </span> 
+                            </p>
                         </div>
-                        <div class="portfolio__item">
-                            <a target="_blank" class="portfolio__item portfolio__link">
-                                GITHUB
+                        <div class="portfolio__iteam--mobile">
+                            <a href="">
+                                InStock
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer class="website__footer">
-        <div class="ticker ticker--top">
-            <p class="ticker__text ticker__text--top">
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-                <span>Tim is a FullStack Web Developer 	&#169;</span>
-            </p>
-        </div>
-    </footer>
+        </main>
+        <footer class="website__footer">
+            <div class="ticker ticker--top">
+                <p class="ticker__text ticker__text--top">
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                    <span>Tim is a FullStack Web Developer 	&#169;</span>
+                </p>
+            </div>
+        </footer>
+    </div>
 </body>
-<script src="./three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> 
 <script src="./app.js"></script>
 </html>
