@@ -61,6 +61,7 @@ portfolioBtn.addEventListener('click', ()=> {
         text.style.color = 'black'
     })
 })
+let ImgRotate = document.querySelectorAll('.hero__svg')
 let animatedTags = document.querySelectorAll("h1, .portfolio__text, .bio__text, .hero__text,  a, .portololio__skill, .hero__svg")
 animatedTags.forEach(tag => {
     tag.style.opacity = 0
@@ -77,7 +78,9 @@ const FadeIn = () => {
             // if its in the view
             ) {
                 tag.style.animation = `fadein 0.5s ${delay}s ease-in both`
+
                 delay = delay + 0.05
+                
             } else {
                 tag.style.opacity = 0
                 tag.style.animation = ''

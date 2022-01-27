@@ -339,7 +339,22 @@ footer {
 .portfolio--mobile {
   display: none;
 }
-@media only screen and (min-width: 1040px) and (max-width: 1920px) {
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+@media only screen and (min-width: 1040px) and (max-width: 1440px) {
   body,
   .bio__text {
     font-size: 16px;
@@ -394,7 +409,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 700px) {
+/* @media only screen and (min-width: 540px) and (max-width: 700px) {
   .hero__text,
   .hero__svg {
     display: none;
@@ -430,9 +445,12 @@ footer {
   .socials {
     top: 12px;
   }
-}
+  .portfolio {
+    height: 120vh;
+  }
+} */
 
-@media only screen and (min-width: 320px) and (max-width: 540px) {
+@media only screen and (min-width: 320px) and (max-width: 701px) {
   body {
     background-color: black;
     color: white;
@@ -507,7 +525,7 @@ footer {
   }
   .portfolio--mobile h2 {
     position: absolute;
-    top: 132px;
+    top: 60px;
   }
   .portfolio--section {
     padding-top: 12px;
@@ -541,5 +559,10 @@ footer {
 @media only screen and (min-width: 458px) and (max-width: 540px) {
   .hero {
     height: 119px;
+  }
+}
+@media only screen and (min-width: 548px) and (max-width: 702px) {
+  .hero {
+    height: 151px;
   }
 }
