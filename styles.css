@@ -477,6 +477,7 @@ footer {
   .hero h1 {
     margin-left: 0;
     margin-right: 0;
+    font-size: 60px;
   }
   .bio {
     padding: 0 0;
@@ -547,22 +548,17 @@ footer {
     height: 5vh;
   }
 }
-@media only screen and (min-width: 376px) and (max-width: 461px) {
+
+@media only screen and (min-width: 320px) and (max-width: 701px) {
   .hero h1 {
-    font-size: 60px;
-  }
-  .hero {
-    height: 89px;
-    height: 8.5vh;
+    font-size: 50px;
   }
 }
-@media only screen and (min-width: 458px) and (max-width: 540px) {
-  .hero {
-    height: 119px;
-  }
-}
-@media only screen and (min-width: 548px) and (max-width: 702px) {
+@media only screen and (min-width: 548px) and (max-width: 701px) {
   .hero {
     height: 151px;
+  }
+  .hero h1 {
+    font-size: 84px;
   }
 }
