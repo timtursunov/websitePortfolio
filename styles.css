@@ -407,6 +407,14 @@ footer {
     height: 5vh;
   }
 }
+@media only screen and (min-width: 548px) and (max-width: 701px) {
+  .hero {
+    height: 151px;
+  }
+  .hero h1 {
+    font-size: 84px;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 374px) {
   .hero h1 {
     font-size: 50px;
@@ -416,13 +424,5 @@ footer {
   }
   .portolio-section--mobile {
     padding: 0 4vw;
-  }
-}
-@media only screen and (min-width: 548px) and (max-width: 701px) {
-  .hero {
-    height: 151px;
-  }
-  .hero h1 {
-    font-size: 84px;
   }
 }
