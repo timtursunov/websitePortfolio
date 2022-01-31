@@ -13,6 +13,7 @@ movemenTimeline
     })
 let nav = document.querySelector('.socials');
 const scrollPercentage = document.querySelector('.progress-bar__number');
+scrollPercentage.innerHTML = `hi, there!`
 document.addEventListener('scroll', () => {
     const pixels = window.pageYOffset
     let limit = (window.pageYOffset + window.innerHeight) / document.body.scrollHeight * 100
@@ -20,9 +21,7 @@ document.addEventListener('scroll', () => {
         scrollPercentage.innerHTML = `socials`
         nav.style.opacity = 1;
         nav.style.zIndex = 3
-    }    else if (limit === 30) {
-        scrollPercentage.innerHTML = `tim turs`
-    } else {
+    }  else {
         scrollPercentage.innerHTML = `${pixels.toFixed()}px`
         nav.style.opacity = 0;
         nav.style.zIndex = -1
@@ -35,10 +34,8 @@ let skillsHighlighted = document.querySelectorAll('.portololio__skill')
 skillsBtn.addEventListener('click', ()=> {
     portfolioBtn.style.borderColor = 'transparent'
     portfolioBtn.style.color = 'black'
-
     skillsBtn.style.borderColor = '#f42e0e'
     skillsBtn.style.color = '#f42e0e'
-
     skillsHighlighted.forEach(skill => {
         skill.style.color ='#f42e0e'
     })
@@ -60,8 +57,7 @@ portfolioBtn.addEventListener('click', ()=> {
         text.style.color = 'black'
     })
 })
-let ImgRotate = document.querySelectorAll('.hero__svg')
-let animatedTags = document.querySelectorAll("h1, .portfolio__text, .bio__text, .hero__text,  a, .portololio__skill, .hero__svg")
+let animatedTags = document.querySelectorAll("h1, .portfolio__text, .bio__text, a, .portololio__skill")
 animatedTags.forEach(tag => {
     tag.style.opacity = 0
 })
@@ -90,7 +86,70 @@ document.addEventListener("scroll", FadeIn )
 window.addEventListener("resize", () => {
     FadeIn()
 })
-const locomotiveScroll = new LocomotiveScroll({
-     el: document.querySelectorAll('.scroll'),
-     smoth: true
+let greenBox = document.querySelector('#hero')
+let canvasBox;
+let font
+let points = []
+function preload () {
+    font = loadFont('helc.ttf')
+}
+function setup() {
+    canvasBox = createCanvas(1200, 600);
+    canvasBox.parent(greenBox)
+
+    points = font.textToPoints("Tim Tursunov", 120, 330, 150, {
+        sampleFactor: 0.3,
+        simplifyThreshold: 0
+    })
+}
+function draw() {
+    const nl = 0.01
+    background('white')
+    fill('black')
+    noStroke()
+    points.forEach(point => {
+        const distance = createVector(point.x - mouseX, point.y - mouseY)
+        const distortion = distance.mult(60 / distance.mag())
+        circle(point.x + distortion.x, point.y + distortion.y, 5);
+        
+    });
+    noFill()
+    stroke('black')
+    beginShape()
+    points.forEach(point => {
+        const distance = createVector(point.x - mouseX, point.y - mouseY)
+        const distortion = distance.mult(60 / distance.mag())
+
+        const nx = 40 * noise(nl * point.x , nl * point.y, nl * frameCount) - 20;
+        const ny = 40 * noise(nl * point.x , nl * point.y, nl * frameCount) - 20;;
+        vertex(point.x + distortion.x + nx, point.y + distortion.y + ny)
+    })
+    endShape()
+}
+
+
+
+//resizing
+
+
+
+
+
+let siteBottom =  document.body.scrollHeight
+
+// let scrollDiv = document.querySelectorAll('.scroll')
+
+// const locomotiveScroll = new LocomotiveScroll({
+//      el: scrollDiv,
+//      smoth: true
+// })
+
+let workScrollBtn = document.querySelector('#work')
+workScrollBtn.addEventListener('click', function(){
+    window.scrollTo({
+        top: siteBottom,       
+        left: 0,
+        behavior: 'smooth'
+    })
 })
+

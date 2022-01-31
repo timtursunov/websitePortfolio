@@ -45,10 +45,14 @@ nav {
   font-family: "HelveticaNeue";
   src: url("./assets/fonts/HelveticaNeueLTW0697BlkCnObl.otf");
 }
+@font-face {
+  font-family: "IBMP";
+  src: url("./assets/fonts/IBMPlexSans-Light.ttf");
+}
 body {
   color: #fdfbf5;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.5;
   font-family: "Haas", sans-serif;
   font-weight: 700;
   background-image: #ffffff;
@@ -59,26 +63,19 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  position: relative;
   padding: 0 4vw;
-  cursor: default;
+  position: relative;
 }
 .hero h1 {
   color: black;
   font-size: 15vw;
-  line-height: normal;
+  line-height: 1.5;
   font-family: "HelveticaNow";
   letter-spacing: -0.5vw;
   width: auto;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-}
-.hero__svg {
-  background-image: url("./assets/icons/Group.svg");
-  width: 250px;
-  height: 250px;
-  background-size: cover;
 }
 @keyframes fadein {
   0% {
@@ -94,6 +91,17 @@ body {
   color: black;
   cursor: default;
 }
+.hero__description {
+  font-size: 36px;
+  line-height: 1.5;
+  width: auto;
+  position: absolute;
+  bottom: 32%;
+  right: 4vw;
+  background-color: #fcf951;
+  padding: 8px;
+  text-transform: uppercase;
+}
 .bio {
   height: 100vh;
   display: flex;
@@ -101,18 +109,23 @@ body {
   align-items: center;
   padding: 0 15vw;
   background-image: url("./assets/images/IMG_0162.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 .bio__text {
   font-size: 24px;
-  font-family: "Haas";
-  width: 30vw;
+  font-family: "IBMP";
+  width: 40vw;
   letter-spacing: 1.7px;
-  line-height: 32px;
+  line-height: 1.5;
   cursor: default;
   color: white;
 }
-.bio__text a {
+.bio__text:nth-child(2) {
+  padding: 48px 0;
+}
+.bio__text a,
+.bio-text span {
+  cursor: pointer;
   text-decoration: none;
   color: #fcf951;
 }
@@ -142,7 +155,7 @@ body {
   cursor: default;
   transition: 0.3s ease-in;
   opacity: 1;
-  line-height: 28px;
+  line-height: 1.5;
 }
 .portfolio__text--selected {
   color: #a0a0a0;
@@ -259,7 +272,7 @@ footer {
   body,
   .bio__text {
     font-size: 16px;
-    line-height: 22.4px;
+    line-height: 1.5;
   }
   .hero__svg {
     width: 160px;
@@ -277,7 +290,7 @@ footer {
   body,
   .bio__text {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.5;
   }
   .hero {
     height: 16vh;
@@ -294,7 +307,7 @@ footer {
     padding-top: 12px;
   }
   .portfolio__text {
-    line-height: 20px;
+    line-height: 1.5;
   }
   .skills,
   .description,
@@ -314,7 +327,7 @@ footer {
     background-color: black;
     color: white;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
   }
   .hero__text,
   .progress-bar,
@@ -331,7 +344,7 @@ footer {
     align-items: flex-start;
     height: 89px;
     background-color: white;
-    line-height: normal;
+    line-height: 1.5;
   }
   .hero h1 {
     margin-left: 0;
@@ -359,7 +372,7 @@ footer {
     width: calc(100% - 8vw);
     letter-spacing: 1px;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
   }
   .bio-text {
     padding-top: 64px;
@@ -373,7 +386,7 @@ footer {
   }
   h2 {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.5;
   }
   .portfolio--mobile {
     display: block;
@@ -395,7 +408,7 @@ footer {
     color: #fcf951;
     text-decoration: none;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.5;
   }
   .portfolio__iteam--mobile p span {
     margin-left: 12px;

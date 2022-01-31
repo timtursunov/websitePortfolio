@@ -51,20 +51,20 @@
             <p class="progress-bar__number"></p>
         </div>
         <main>
-            <div class="hero">
-                <h1>
-                    Tim Tursunov
-                </h1>
-                <div class="hero__svg rotating">
-                </div>
-                <p class="hero__text">keep scrolling</p>
+            <div id="hero" class="hero">
+                <p class="hero__description">
+                    Full Stack Web Developer &#42;
+                </p>
+                <p class="hero__text">
+                    scroll down
+                </p>
             </div>
             <div class="photo--mobile">
             </div>
             <div class="bio">
                 <div class="bio-text">
                     <p class="bio__text">
-                        Hi friend! I'm Tim. I'm a Full Stack Web Developer with a love for web design and environment based in Toronto.
+                        Hi friend! I'm Tim. I'm a Full Stack Web Developer with a love for web design based in Toronto.
                         I channel my visual communication and computer technology interests to find creative solutions and bring my ideas online.
                     </p>
                     <p class="bio__text">
@@ -74,12 +74,14 @@
                     </p>
                     <p class="bio__text">
                         Feel free to check out my 
-                        <a href=#work>work</a>
+                        <span id="work">work</span>
                          and 
-                         <a href="./Tim_Tursunov_Portfolio.PDF">
+                         <a target="_blank" href="./Tim_Tursunov_Portfolio.PDF">
                             resume
                          </a>
-                        . If you wanna <a href="mailto:tim.alex.turs@gmail.com">chat</a>, don't hesitate to drop me a line!
+                        . If you wanna chat, send me an email at
+                        <a href="mailto:tim.alex.turs@gmail.com">tim.alex.turs@gmail.com</a>
+                        !
                     </p>
                 </div>
             </div>
@@ -131,7 +133,7 @@
                             <p class="portfolio__text">
                                 HTML, CSS, 
                                 <span class="portololio__skill">JS, </span>
-                                JS, Jquery,
+                                Jquery,
                                 <span class="portololio__skill">
                                     WordPress, 
                                 </span>
@@ -171,8 +173,8 @@
                         </div>
                         <div class="portfolio__section skills">
                             <p class="portfolio__text">
-                                <span class="portololio__skill">HTML</span>
-                                , CSS, React, 
+                                <span class="portololio__skill">HTML, </span>
+                                CSS, React, 
                                 <span class="portololio__skill">
                                     Contentful JS
                                 </span>
@@ -211,8 +213,8 @@
                             <p class="portfolio__text">
                                 HTML, 
                                 <span class="portololio__skill">
-                                    CSS
-                                </span>, JS, 
+                                    CSS, 
+                                </span>JS, 
                                 <span class="portololio__skill">
                                     Jquery
                                 </span>
@@ -298,7 +300,6 @@
                                 <span class="portololio__skill">
                                     Express, 
                                 </span>
-                                Express, 
                                 <span class="portololio__skill">
                                     Node, 
                                 </span>
@@ -396,7 +397,7 @@
                 </div>
             </div>
         </main>
-        <footer id='work' class="website__footer">
+        <footer id='bottom' class="website__footer">
             <div class="ticker ticker--top">
                 <p class="ticker__text ticker__text--top">
                     <span>Tim is a FullStack Web Developer 	&#169;</span>
@@ -412,6 +413,7 @@
         </footer>
     </div>
 </body>
+<script src="./p5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> 
 <script src="./app.js"></script>
