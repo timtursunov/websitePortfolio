@@ -66,16 +66,14 @@ body {
   padding: 0 4vw;
   position: relative;
 }
-.hero h1 {
-  color: black;
-  font-size: 15vw;
+.hero--mobile {
+  display: none;
+}
+.hero--mobile h1 {
+  color: white;
   line-height: 1.5;
   font-family: "HelveticaNow";
   letter-spacing: -0.5vw;
-  width: auto;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
 }
 @keyframes fadein {
   0% {
@@ -121,7 +119,7 @@ body {
   color: white;
 }
 .bio__text:nth-child(2) {
-  padding: 48px 0;
+  margin: 48px 0;
 }
 .bio__text a,
 .bio-text span {
@@ -274,17 +272,18 @@ footer {
     font-size: 16px;
     line-height: 1.5;
   }
-  .hero__svg {
-    width: 160px;
-    height: 160px;
-  }
   .bio {
     background-position: 57% 100%;
   }
 }
+@media only screen and (min-width: 1040px) and (max-width: 1199px) {
+  .hero {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 701px) and (max-width: 1039px) {
-  .hero__text,
-  .hero__svg {
+  .hero__text {
     display: none;
   }
   body,
@@ -293,12 +292,23 @@ footer {
     line-height: 1.5;
   }
   .hero {
-    height: 16vh;
+    display: none;
+  }
+  .hero--mobile {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero--mobile h1 {
+    font-size: 84px;
+    color: black;
   }
   .bio {
     height: 84vh;
     background-position: 57% 100%;
     padding-right: 36px;
+    background-size: cover;
   }
   .bio__text {
     width: 350px;
@@ -331,8 +341,7 @@ footer {
   }
   .hero__text,
   .progress-bar,
-  .socials,
-  .hero__svg {
+  .socials {
     display: none;
   }
   .mobile-only__text--absolute {
@@ -341,22 +350,23 @@ footer {
     right: 24px;
   }
   .hero {
-    align-items: flex-start;
-    height: 89px;
-    background-color: white;
-    line-height: 1.5;
+    display: none;
   }
-  .hero h1 {
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 60px;
+  .hero--mobile {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero--mobile h1 {
+    font-size: 84px;
   }
   .bio {
     padding: 0 0;
     background-image: none;
   }
   .photo--mobile {
-    margin-top: 120px;
+    margin-top: 56px;
     display: block;
     height: 400px;
     width: 100%;
@@ -377,6 +387,9 @@ footer {
   .bio-text {
     padding-top: 64px;
     padding-bottom: 36px;
+  }
+  .bio__text:nth-child(2) {
+    margin: 24px 0;
   }
   .portfolio {
     display: none;
@@ -421,18 +434,24 @@ footer {
   }
 }
 @media only screen and (min-width: 548px) and (max-width: 701px) {
-  .hero {
-    height: 151px;
+  .hero--mobile {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .hero h1 {
+  .hero--mobile h1 {
     font-size: 84px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 461px) {
-  .hero h1 {
-    font-size: 50px;
+  .hero--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .hero {
+  .hero--mobile h1 {
+    font-size: 50px;
     height: 89px;
   }
   .portolio-section--mobile {
