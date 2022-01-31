@@ -73,7 +73,6 @@ body {
   color: white;
   line-height: 1.5;
   font-family: "HelveticaNow";
-  letter-spacing: -0.5vw;
 }
 @keyframes fadein {
   0% {
@@ -275,10 +274,27 @@ footer {
   .bio {
     background-position: 57% 100%;
   }
+  .hero__description {
+    font-size: 24px;
+  }
 }
 @media only screen and (min-width: 1040px) and (max-width: 1199px) {
   .hero {
     display: none;
+  }
+  .hero--mobile {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero--mobile h1 {
+    font-size: 84px;
+    color: black;
+  }
+  .bio {
+    background-size: cover;
+    background-position: 90% 50%;
   }
 }
 
@@ -359,7 +375,7 @@ footer {
     justify-content: center;
   }
   .hero--mobile h1 {
-    font-size: 84px;
+    font-size: 72px;
   }
   .bio {
     padding: 0 0;
