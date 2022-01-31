@@ -265,6 +265,9 @@ footer {
 .portfolio--mobile {
   display: none;
 }
+li p {
+  cursor: pointer;
+}
 @media only screen and (min-width: 1040px) and (max-width: 1440px) {
   body,
   .bio__text {
@@ -276,6 +279,7 @@ footer {
   }
   .hero__description {
     font-size: 24px;
+    bottom: 27%;
   }
 }
 @media only screen and (min-width: 1040px) and (max-width: 1199px) {
